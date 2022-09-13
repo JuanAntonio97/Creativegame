@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicio Sesión"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/use"
+        android:layout_width="316dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_edit"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:hint="Usuario"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="316dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_edit"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:hint="Contraseña"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/use" />
+
+
+    <Button
+        android:id="@+id/inicioSe"
+        android:layout_width="335dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/round_btn"
+        android:text="Iniciar Sesion"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="406dp"
+        android:layout_height="238dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/login" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="118dp"
+        android:layout_height="141dp"
+        android:layout_marginBottom="4dp"
+        app:lottie_autoPlay="true"
+        app:srcCompat="@raw/facebook"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/facebook"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView2"
+        android:layout_width="118dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="4dp"
+        app:lottie_autoPlay="true"
+        app:srcCompat="@raw/linkedin"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/linkedin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lottieAnimationView" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="118dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="4dp"
+        app:lottie_autoPlay="true"
+        app:srcCompat="@raw/twitter"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/twitter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lottieAnimationView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

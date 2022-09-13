@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Creativegame</string>
+    <string name="tv_txt_figuras_completadas">Figuras\ncompletadas</string>
+    <string name="tv_n_figuras_completadas">0</string>
+    <string name="tv_ultima_figura">¡Has llegado al final del juego!</string>
+    <string name="tv_txt_puntos">Puntos</string>
+    <string name="tv_n_puntos">100</string>
+    <string name="tv_segundos">0 segundos</string>
+    <string name="tv_piezas_faltan">Faltan: 0 piezas</string>
+    <string name="tv_txt_nivel">Nivel</string>
+    <string name="tv_n_nivel">1</string>
+    <string name="bt_siguiente">siguiente figura</string>
+    <string name="tv_texto_figura">Casa</string>
+    <string name="bt_jugar">Jugar</string>
+    <string name="tv_siguiente">Desliza el dedo sobre la pantalla para pasar a la siguiente figura</string>
+    <string name="puntuacion">puntuacion</string>
+    <string name="Puntuacion">Puntuacion:</string>
+    <string name="success">¡Felicidades! !</string>
+    <string name="next">¡Desbloquea el nuevo nivel con éxito! !</string>
+    <string name="restart">reiniciar</string>
+    <string name="ok">Por supuesto</string>
+    <string name="exit">abandonar</string>
+    <string name="complete">¡felicidades por superar el nivel! !</string>
+    <string name="tips">tips</string>
+    <string name="hint_nombre">Nombre:</string>
+    <string name="hint_telefono">Telefono:</string>
+    <string name="hint_correo_electronico">Correo electronico:</string>
+    <string name="btn_guarda">Guardar registro</string>
+    <string name="menu_nuevo">Nuevo registro</string>
+    <string name="hint_juego">hint_juego</string>
+    <string name="hint_nivel">hint_nivel</string>
+    <string name="todo">TODO</string>
+</resources>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        android:textStyle="normal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:ems="10"
+        android:background="@drawable/round_edit"
+        android:inputType="textPersonName"
+       android:hint="Nombre"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Usuario"
+        android:background="@drawable/round_edit"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nom" />
+
+    <RadioGroup
+        android:id="@+id/rG"
+        android:layout_width="176dp"
+        android:layout_height="178dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username">
+
+        <RadioButton
+            android:id="@+id/Nivelfacil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_edit"
+            android:minHeight="48dp"
+            android:text="Nivel Facil"
+            android:onClick="checkButton"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/Nivelmedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_edit"
+            android:minHeight="48dp"
+            android:onClick="checkButton"
+            android:text="Nivel Medio"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/Niveldificil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="checkButton"
+            android:background="@drawable/round_edit"
+            android:minHeight="48dp"
+            android:text="Nivel Dificil"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="339dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/round_edit"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rG" />
+
+    <EditText
+        android:id="@+id/repass"
+        android:layout_width="339dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/round_edit"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:ems="10"
+        android:hint="Confirmar Contraseña"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="352dp"
+        android:layout_height="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alredy"
+        app:layout_constraintVertical_bias="1.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/study"
+        app:srcCompat="@raw/study" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="335dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_btn"
+        android:text="REGISTRAR"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repass" />
+
+    <Button
+        android:id="@+id/alredy"
+        android:layout_width="335dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:textColor="@color/white"
+        android:background="@drawable/round_btn"
+        android:text="TIENES UNA CUENTA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
